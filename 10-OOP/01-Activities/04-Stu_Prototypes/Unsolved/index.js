@@ -1,4 +1,4 @@
-// TODO: Add a comment describing what kind of function this is
+// TODO: Add a comment describing what kind of function this is constructor
 function Character(name, type, age, strength, hitpoints) {
   this.name = name;
   this.type = type;
@@ -7,7 +7,7 @@ function Character(name, type, age, strength, hitpoints) {
   this.hitpoints = hitpoints;
 }
 
-// TODO: Add a comment describing the purpose of `.prototype` in this method declaration
+// TODO: Add a comment describing the purpose of `.prototype` in this method declaration provide a skeleton for the console to print
 Character.prototype.printStats = function () {
   console.log(
     `Name: ${this.name}\nProfession: ${this.type}\nAge: ${this.age}\nStrength: ${this.strength}\nHitPoints: ${this.hitpoints}`
@@ -15,7 +15,7 @@ Character.prototype.printStats = function () {
   console.log('\n-------------\n');
 };
 
-// TODO: Add a comment describing the functionality of this method
+// TODO: Add a comment describing the functionality of this method is the code working
 Character.prototype.isAlive = function () {
   if (this.hitpoints > 0) {
     console.log(`${this.name} is still alive!`);
@@ -26,12 +26,12 @@ Character.prototype.isAlive = function () {
   return false;
 };
 
-// TODO: Add a comment describing the functionality of this method
+// TODO: Add a comment describing the functionality of this method takes the hit points from the strength
 Character.prototype.attack = function (character2) {
   character2.hitpoints -= this.strength;
 };
 
-// TODO: Add a comment describing the functionality of this method
+// TODO: Add a comment describing the functionality of this method the actions that occur when a characater levels up
 Character.prototype.levelUp = function () {
   this.age += 1;
   this.strength += 5;
@@ -46,7 +46,7 @@ rogue.printStats();
 
 rogue.attack(warrior);
 
-// TODO: Add a comment describing what you expect to see printed in the console
+// TODO: Add a comment describing what you expect to see printed in the console 
 warrior.printStats();
 
 // TODO: Add a comment describing what you expect to see printed in the console

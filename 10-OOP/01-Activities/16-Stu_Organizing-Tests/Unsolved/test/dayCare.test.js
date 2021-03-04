@@ -7,6 +7,7 @@ describe("DayCare", () => {
       const dayCare = new DayCare();
 
       // TODO: Add a comment describing the purpose of the following statement
+        //set daycare objt to have limited acceptance of child obj
       expect(dayCare).toEqual({ children: [], capacity: 3, ageLimit: 6 });
     });
   });
@@ -14,6 +15,7 @@ describe("DayCare", () => {
   describe("addChild", () => {
     it("should add a child to the 'children' array", () => {
       // TODO: Add a comment describing the purpose of the following declarations
+        // adds new child objt to 
       const child = new Child("Tammy", 1);
       const dayCare = new DayCare();
 
