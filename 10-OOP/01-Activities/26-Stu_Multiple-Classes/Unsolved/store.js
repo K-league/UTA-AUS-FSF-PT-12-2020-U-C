@@ -10,6 +10,8 @@ class Store {
       if (item.name === name) {
         if (item.count > 0) {
           // TODO: Decrement the store's stock of item
+          this.stock -= 1;
+          this.revenue += 1;
           // TODO: Increase the store's revenue
           console.log(`Purchased ${item.name} for ${item.price}`);
         } else {
