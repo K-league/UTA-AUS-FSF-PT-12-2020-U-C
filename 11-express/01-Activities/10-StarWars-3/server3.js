@@ -41,6 +41,7 @@ app.get('/api/characters', (req, res) => {
 });
 
 // What does this route do?
+//give all chracter objcts
 app.get('/api/characters/:character', (req, res) => {
   // What does this code do?
   const chosen = req.params.character;
