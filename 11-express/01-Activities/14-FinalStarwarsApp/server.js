@@ -61,7 +61,7 @@ app.get('/api/characters/:character', (req, res) => {
   for (let i = 0; i < characters.length; i++) {
     if (chosen === characters[i].routeName) {
       return res.json(characters[i]);
-    }
+    } 
   }
 
   return res.json(false);
